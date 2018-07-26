@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro");
+
+body{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.card {
+  width: 400px;
+  margin: 0px auto;
+  display: inline-block;
+  background-color: white;
+  box-shadow: 0px 5px 20px #555;
+  margin-left: 2%;
+  margin-top: 3%;
+  padding: 2px;
+}
+.container{
+  margin: 0px auto;
+  margin-left: 6%;
+}
+p{
+  margin-bottom: 0px !important;
+}
+.card a {
+  color: #333;
+  text-decoration: none;
+}
+.card:hover .card-image img {
+  width: 110%;
+  filter: grayscale(0);
+  transform: scale3d(0.5);
+}
+
+.card-image {
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+}
+.card-image img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: grayscale(.6);
+  transition-property: filter width;
+  transition-duration: .3s;
+}
+
+.card-body {
+  text-align: center;
+  padding: 15px 20px;
+  box-sizing: border-box;
+}
+
+
+.card-title, .card-exceprt {
+  font-family: 'Playfair Display', serif;
+}
+
+.card-date, .card-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.card-date, .card-excerpt {
+  color: #777;
+}
+.checked {
+    color: orange;
+}
+
+.btn-luxe-primary {
+  background: #222222;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: transparent;
+  overflow: hidden;
+  padding: 10px 20px;
+  position: relative;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+
+}
+.btn-luxe-primary i {
+  position: absolute;
+  top: 50%;
+  font-size: 16px;
+  right: -20px;
+  margin-top: -8px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+    color: #fff;
+}
+.btn-luxe-primary:hover {
+  background: #191b1d;
+  padding-right: 40px;
+}
+.btn-luxe-primary:hover i {
+  right: 10px;
+}
+.btn-luxe-primary:focus, .btn-luxe-primary:active {
+  background: #1e2123 !important;
+}
